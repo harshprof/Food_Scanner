@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <!-- User Profile Icon -->
+    <ImageView
+        android:id="@+id/userLogo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_user_logo"
+        android:contentDescription="User Profile"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="#000000" />
+
+    <!-- Title or Greeting Text -->
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/userLogo"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Welcome!"
+        android:textSize="20sp"
+        android:textColor="#333333" />
+
+    <!-- ListView for Scanned Items -->
+    <ListView
+        android:id="@+id/scanItemsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/greetingText"
+        android:layout_above="@+id/cameraButton"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="#FFFFFF" />
+
+    <!-- Camera Button -->
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Scan New Item"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

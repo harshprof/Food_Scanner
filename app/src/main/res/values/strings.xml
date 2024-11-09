@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mad_final_project</string>
+
+    <string-array name="medical_conditions">
+        <item>Select Condition</item>
+        <item>Diabetes</item>
+        <item>Celiac Disease</item>
+        <item>Hypertension</item>
+        <item>Lactose Intolerance</item>
+        <item>Kidney Disease</item>
+        <item>Hyperlipidemia</item>
+    </string-array>
+</resources>
